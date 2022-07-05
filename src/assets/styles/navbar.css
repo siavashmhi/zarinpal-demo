@@ -1,0 +1,178 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    padding: 21px 0 7px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+}
+
+.myLogo {
+    margin: 11px 28px;
+}
+
+.headerUl {
+    display: flex;
+    list-style: none;
+}
+
+.headerUl li {
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.headerUl li a {
+    color: #303030;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.headerUl li img {
+    width: 10px;
+}
+
+.headerUl > li:last-child a {
+    color: #28457b;
+    background-color: rgba(232,239,254,0.6);
+    padding: 10px 27px;
+    border-radius: 20px;
+    font-family: 'YekanBakhBold';
+}
+
+.headerUl > li:last-child a:hover {
+    background-color: rgba(232,239,254,0.8);
+}
+
+.hamburgerIcon {
+    width: 27px;
+    display: none;
+    cursor: pointer;
+}
+
+/* hamburger menu css */
+.hamburgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    font-family: YekanBakhMedium;
+    transform: translateY(-100%);
+}
+
+.hamburgerMenuItems {
+    padding: 10px 30px;
+}
+
+.hamburgerMenuItems ul li a {
+    text-decoration: none;
+    color: #303030;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.hamburgerMenuItems div {
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 90%;
+    margin: 8px 0;
+} 
+
+.crosIcon {
+    width: 100%;
+    text-align: left;
+    padding: 25px 0;
+}
+
+.crosIcon img {
+    width: 20px;
+    margin-left: 30px;
+}
+
+.moreItem {
+    display: flex;
+    background-color: #eee;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.moreItem a {
+    text-decoration: none;
+    color: #28457b;
+    font-size: 0.85rem;
+}
+
+.moreItem img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.showHamburgerMenu {
+    animation: fadeInDown 0.35s forwards;
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburgerMenu{
+        display: block;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .header {
+        width: 940px;
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+        width: auto;
+        padding: 20px 60px;
+    }
+
+    .headerUl li:last-child {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerUl {
+        display: none;
+    }
+
+    .header {
+        width: auto;
+        padding: 10px 8px;
+
+    }
+
+    .hamburgerIcon {
+        display: block;
+    }
+}
+
