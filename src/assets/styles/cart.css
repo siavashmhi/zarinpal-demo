@@ -1,0 +1,77 @@
+.cart-container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 450px;
+    height: 480px;
+}
+
+.desc-container {
+    margin: 30px 0;
+    width: 530px;
+}
+
+.desc-container h2 {
+    color: #747480;
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+
+.desc-container h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px 0 10px;
+}
+
+.desc-container p {
+    color: #303030;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    line-height: 40px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+
+.section-links {
+    margin-top: 40px;
+    display: flex;
+}
+
+.section-links a {
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    padding: 6px 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    color: #28457b;
+    background-color: rgba(232,239,254,.6);
+}
+
+.section-links .first-button {
+    color: #000;
+    background-color: #ffd900;
+    margin-left: 10px;
+}
+
+.section-links .secound-button img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.section-links .secound-button {
+    display: flex;
+    align-items: center;
+}
+
