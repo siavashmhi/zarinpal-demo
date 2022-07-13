@@ -1,0 +1,77 @@
+.start-box {
+    width: 1170px;
+    height: 220px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    border: 1px solid #c3c6cd;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.start-box h4 {
+    color: #303030;
+    font-size: 1.7rem;
+    font-family: YekanBakhHeavy;
+}
+
+
+.start-box p {
+    margin-top: 9px;
+    color: #747480;
+    font-size: 1.4rem;
+    font-family: YekanBakhHeavy;
+}
+
+.start-box a {
+    color: black;
+    margin-top: 17px;
+    font-size: 0.9rem;
+    padding: 4px 14px;
+    min-height: 28px;
+    line-height: 28px;
+    border-radius: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-family: iranyekanwebmedium,sans-serif;
+    text-decoration: none;
+    background: linear-gradient(270deg,#ffd900,#ffe422) 0 0 no-repeat padding-box;
+}
+
+@media (max-width: 1200px) {
+    .start-box {
+        width: 940px;
+    }
+}
+
+@media (max-width: 990px) {
+    .start-box {
+        margin-right: 38px;
+        margin-left: 38px;
+        width: calc(100% - 76px);
+    }
+}
+
+@media (max-width: 768px) {
+    .start-box {
+        margin-right: 8px;
+        margin-left: 8px;
+        width: calc(100% - 16px);
+    }
+}
+
+@media (max-width: 575px) {
+    .start-box {
+        height: 120px;
+    }
+    .start-box h4 {
+        font-size: 1.2rem;
+    }
+    .start-box p {
+        font-size: 1rem;
+    }
+}

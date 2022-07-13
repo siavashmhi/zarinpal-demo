@@ -77,7 +77,6 @@
         width: 900px;
         padding: 60px 40px 120px;
     }
-
     .banner img {
         width: 430px;
     }
@@ -90,20 +89,16 @@
         margin-left: 35px;
         margin-right: 35px;
     }
-
     .banner img {
         display: none;
     }
-
     .banner-text {
         text-align: center;
     }
-
     .banner-text p {
         margin: 5px 0;
         font-size: 1rem;
     }
-
     .banner-btns {
         margin-top: 40px;
     }

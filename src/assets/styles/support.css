@@ -1,0 +1,79 @@
+.support {
+    width: 1110px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: #fbf6f1;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.support-number p {
+    font-size: 24px;
+    font-family: YekanBakhHeavy;
+}
+
+.line {
+    margin: 0 15px;
+}
+
+.phone-number {
+    color: #21457f;
+    margin-right: 15px;
+}
+
+.support-title {
+    display: flex;
+    align-items: center;
+}
+
+.support-title p {
+    color: #21457f;
+    font-size: 24px;
+    font-family: YekanBakhBold;
+}
+
+.support-title img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px){
+    .support {
+        width: 880px;
+    }
+}
+
+@media (max-width: 990px){
+    .support {
+        width: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .support {
+        flex-direction: column;
+        align-items: flex-start;
+        background: none;
+    }
+    .support-title {
+        background-color: #fbf6f1;
+        padding: 5px 20px;
+        border-radius: 35px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px){
+    .support-number,
+    .support-title{
+        font-size: 0.9rem;
+    }
+}
+
+

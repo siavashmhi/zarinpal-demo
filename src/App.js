@@ -4,6 +4,11 @@ import '../src/assets/styles/fonts.css'
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Cart from "./components/Cart";
+import Section from "./components/Section";
+import Startbox from "./components/Startbox";
+import Support from "./components/Support";
+import Footer from "./components/Footer";
+import Bell from "./components/Bell";
 import pgImage from './assets/icons/pg.svg'
 import socialImage from './assets/icons/social-image.svg'
 import zarinCard from './assets/icons/zarincard.svg'
@@ -68,8 +73,11 @@ export default function App() {
           جایگاه برترین فروشگاه منطقه را به خود اختصاص دهند.'
         btnText='پیوستن به زرین پلاس'
        />
+      <Section />
+      <Startbox />
+      <Support />
+      <Footer />
+      <Bell />
     </div>
   );
 }
-
-

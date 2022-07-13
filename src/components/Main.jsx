@@ -1,6 +1,6 @@
 import React from 'react';
-import homeImage from '../assets/icons/home.svg'
 import '../assets/styles/main.css'
+import homeImage from '../assets/icons/home.svg'
 import goDown from '../assets/icons/down-arrow-svgrepo-com.svg'
 
 export default function Main() {
@@ -37,4 +37,3 @@ export default function Main() {
         </main>
     );
 };
-

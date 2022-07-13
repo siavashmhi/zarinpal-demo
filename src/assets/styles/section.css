@@ -1,0 +1,139 @@
+.attributes {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.definition {
+    width: 35%;
+    margin-top: 50px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 30px;
+}
+
+.items .item {
+    padding: 18px 25px 20px 0;
+}
+
+.items .item div {
+    display: flex;
+    align-items: center;
+}
+
+.items h4 {
+    font-size: 1.5rem;
+    font-family: YekanBakhHeavy;
+    margin-right: 20px;
+}
+
+.items .item p {
+    margin: 20px 0 20px 10px;
+    color: #303030;
+    font-family: YekanBakhMedium;
+    font-size: 1rem;
+    line-height: 36px;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+}
+
+.definition h3 {
+    font-size: 2rem;
+    font-family: YekanBakhHeavy;
+}
+
+.definition p {
+    width: 85%;
+    margin: 40px 0 20px 40px;
+    color: #303030;
+    font-family: YekanBakhMedium;
+    font-size: 1rem;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.first-item {
+    border-left: 1px solid #e0e4e7;
+}
+
+.secound-item {
+    border-bottom: 1px solid #e0e4e7;
+}
+.third-item {
+    border-top: 1px solid #e0e4e7;
+}
+.fourth-item {
+    border-right: 1px solid #e0e4e7;
+}
+
+@media (max-width: 1200px) {
+    .attributes {
+        width: 924px;
+        flex-direction: column;
+        padding: 0 8px;
+    }
+    .definition {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .definition p {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-item,
+    .secound-item,
+    .third-item,
+    .fourth-item {
+        border: none;
+    }
+    .items {
+        width: 90%;
+        padding: 30px;
+    }
+    .items .item {
+        padding: 18px 0 20px 50px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .attributes {
+        width: auto;
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .definition {
+        text-align: center;
+        margin-top: 90px;
+    }
+    .definition h3 {
+        font-size: 1.6rem;
+    }
+    .items {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .items .item {
+        padding: 18px 0 20px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .items {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+    .items .item {
+        padding: 18px 0;
+    }
+}

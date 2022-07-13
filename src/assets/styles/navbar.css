@@ -49,22 +49,11 @@
     background-color: rgba(232,239,254,0.8);
 }
 
+/* hamburger menu css */
 .hamburgerIcon {
-    width: 27px;
+    width: 35px;
     display: none;
     cursor: pointer;
-}
-
-/* hamburger menu css */
-.hamburgerMenu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: #fff;
-    font-family: YekanBakhMedium;
-    transform: translateY(-100%);
 }
 
 .hamburgerMenuItems {
@@ -119,13 +108,80 @@
     animation: fadeInDown 0.35s forwards;
 }
 
+#show-product-menu {
+    position: relative;
+}
+
+.prodcut-menu {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    background-color: #fff;
+    min-width: 372px;
+    height: 219px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    transition: all 0.3s ease-in-out;
+}
+
+#left-menu {
+    margin-right: 20px;
+}
+
+.prodcut-menu p {
+    font-size: 14px;
+    font-family: YekanBakhBold;
+}
+
+.prodcut-menu div a p:nth-child(1) {
+    color: #303030;
+}
+
+.prodcut-menu-text-below {
+    color: rgb(135, 129, 129);
+    margin-top: 5px;
+}
+
+#show-more-menu {
+    position: relative;
+}
+
+#show-more-menu ul {
+    position: absolute;
+    min-width: 150px;
+    top: 30px;
+    left: -12px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    transition: all 0.3s ease-in-out;
+}
+
+#show-more-menu ul li {
+    margin-top: 10px;
+}
+
+#show-more-menu ul li a {
+    font-size: 14px;
+    color: #303030;
+    font-family: YekanBakhBold;
+}
+
 
 @keyframes fadeInDown {
     0% {
         opacity: 0;
         transform: translateY(-100%);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -136,7 +192,6 @@
     .hamburgerMenu{
         display: block;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -150,11 +205,9 @@
         width: auto;
         padding: 20px 60px;
     }
-
     .headerUl li:last-child {
         display: none;
     }
-
     .logo {
         margin: 0;
     }
@@ -164,15 +217,11 @@
     .headerUl {
         display: none;
     }
-
     .header {
         width: auto;
         padding: 10px 8px;
-
     }
-
     .hamburgerIcon {
         display: block;
     }
 }
-
